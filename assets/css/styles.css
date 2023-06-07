@@ -264,3 +264,33 @@ a {
     bottom: -46px;
     right: 0px;
 }
+
+/* Market */
+.market {
+    margin-top: 42px;
+}
+.market__media {
+    padding: 77px;
+    background: #e2eddf;
+    border-radius: 100.5px;
+}
+
+.market-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.market-images__img:first-child,
+.market-images__img:nth-child(2) {
+    margin-right: 49px;
+}
+
+.market-images__img:nth-child(3) {
+    margin-right: 11px;
+}
+
+.market-images__img:nth-child(4),
+.market-images__img:nth-child(5) {
+    margin-right: 63px;
+}
