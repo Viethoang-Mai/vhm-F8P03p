@@ -55,10 +55,30 @@ a {
 }
 
 .section-heading {
-    font-weight: 800;
-    font-size: 5rem;
-    line-height: 1.2;
+    font-weight: 600;
+    font-size: 4.2rem;
+    line-height: 1.24;
+
     color: #152427;
+}
+
+.section-heading::after {
+    position: relative;
+    left: 13px;
+    display: inline-block;
+    content: " ";
+    width: 66px;
+    height: 2px;
+    background: #152427;
+}
+
+.section-intro {
+    position: relative;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.62;
+    color: #152427;
+    margin-left: 46px;
 }
 
 /* Header */
@@ -146,6 +166,10 @@ a {
 }
 
 .hero__content--heading {
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 1.2;
+    color: #152427;
     max-width: 374px;
 }
 .hero__content--desc {
@@ -293,4 +317,109 @@ a {
 .market-images__img:nth-child(4),
 .market-images__img:nth-child(5) {
     margin-right: 63px;
+}
+
+/* Services */
+.services {
+    margin-top: 106px;
+}
+
+.section-intro::before {
+    position: absolute;
+    display: inline-block;
+    content: " ";
+    width: 25px;
+    height: 1px;
+    top: 6px;
+    left: -46px;
+    background: #152427;
+}
+
+.services__row {
+    display: flex;
+    align-items: flex-end;
+}
+
+.services__row--heading {
+    max-width: 520px;
+    margin: 12px 442px 0 0;
+}
+
+.services__direction {
+    display: flex;
+    gap: 17px;
+}
+
+.services__btn {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 1px solid #e2eddf;
+    background: #e2eddf;
+    color: #152427;
+    transition: 0.35s;
+}
+
+.services__btn:last-child {
+    transform: rotate(180deg);
+}
+
+.services__btn:hover {
+    cursor: pointer;
+    background: #143c3c;
+    color: #fff;
+}
+
+.services__body {
+    margin-top: 76px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+}
+
+.services-item {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.25s;
+}
+
+.services__item-img {
+    display: block;
+    width: 370px;
+    height: 318px;
+    object-fit: cover;
+}
+
+.services__item-body {
+    padding: 24px 0 23px;
+    transition: 0.35s;
+}
+
+.services__item-body--title {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1;
+    color: #152427;
+    margin-bottom: 18px;
+}
+
+.services__item-body--desc {
+    max-width: 268px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: #7d8188;
+}
+
+.services-item:hover {
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+
+.services-item:hover .services__item-body {
+    cursor: pointer;
+    padding: 24px 12px;
 }
